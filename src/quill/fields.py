@@ -1,5 +1,5 @@
 from django.db import models
-from .widgets import QuillWidget
+from quill.widgets import QuillWidget
 
 
 class DeltaField(models.JSONField):
