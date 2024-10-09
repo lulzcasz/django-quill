@@ -33,5 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     quill.setContents(getContent(editorElement));
 
+    updateHiddenInput(quill, hiddenInputElement);
+
     quill.on('text-change', () => updateHiddenInput(quill, hiddenInputElement));
 });
